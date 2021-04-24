@@ -19,7 +19,11 @@
 		AC2FDE75261B3C18008767DB /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2FDE74261B3C18008767DB /* PostViewController.swift */; };
 		AC2FDE78261B3C28008767DB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2FDE77261B3C28008767DB /* SettingViewController.swift */; };
 		AC2FDE84261B5258008767DB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2FDE83261B5258008767DB /* TabBarController.swift */; };
+		AC58548E262439B300B48AAE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58548D262439B300B48AAE /* Const.swift */; };
+		AC58549126244ED300B48AAE /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58549026244ED300B48AAE /* PostData.swift */; };
 		ACBF0FF4261EFFC200FBA853 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACBF0FF3261EFFC200FBA853 /* GoogleService-Info.plist */; };
+		ACF111B12625B290004DA166 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF111AF2625B290004DA166 /* PostTableViewCell.swift */; };
+		ACF111B22625B290004DA166 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF111B02625B290004DA166 /* PostTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +42,11 @@
 		AC2FDE74261B3C18008767DB /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		AC2FDE77261B3C28008767DB /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		AC2FDE83261B5258008767DB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		AC58548D262439B300B48AAE /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		AC58549026244ED300B48AAE /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		ACBF0FF3261EFFC200FBA853 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACF111AF2625B290004DA166 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		ACF111B02625B290004DA166 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		F7B54F3FBA60310E04AEC9D9 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +112,10 @@
 				ACBF0FF3261EFFC200FBA853 /* GoogleService-Info.plist */,
 				AC2FDE5F261B3422008767DB /* Assets.xcassets */,
 				AC2FDE61261B3422008767DB /* LaunchScreen.storyboard */,
+				AC58548D262439B300B48AAE /* Const.swift */,
+				ACF111AF2625B290004DA166 /* PostTableViewCell.swift */,
+				ACF111B02625B290004DA166 /* PostTableViewCell.xib */,
+				AC58549026244ED300B48AAE /* PostData.swift */,
 				AC2FDE64261B3422008767DB /* Info.plist */,
 			);
 			path = Instagram;
@@ -169,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC2FDE63261B3422008767DB /* LaunchScreen.storyboard in Resources */,
+				ACF111B22625B290004DA166 /* PostTableViewCell.xib in Resources */,
 				ACBF0FF4261EFFC200FBA853 /* GoogleService-Info.plist in Resources */,
 				AC2FDE60261B3422008767DB /* Assets.xcassets in Resources */,
 				AC2FDE5E261B3421008767DB /* Main.storyboard in Resources */,
@@ -224,14 +237,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF111B12625B290004DA166 /* PostTableViewCell.swift in Sources */,
 				AC2FDE72261B3C02008767DB /* ImageSelectViewController.swift in Sources */,
 				AC2FDE84261B5258008767DB /* TabBarController.swift in Sources */,
 				AC2FDE6F261B3BE9008767DB /* HomeViewController.swift in Sources */,
 				AC2FDE75261B3C18008767DB /* PostViewController.swift in Sources */,
 				AC2FDE78261B3C28008767DB /* SettingViewController.swift in Sources */,
+				AC58549126244ED300B48AAE /* PostData.swift in Sources */,
 				AC2FDE6C261B3A5B008767DB /* LoginViewController.swift in Sources */,
 				AC2FDE57261B3421008767DB /* AppDelegate.swift in Sources */,
 				AC2FDE59261B3421008767DB /* SceneDelegate.swift in Sources */,
+				AC58548E262439B300B48AAE /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

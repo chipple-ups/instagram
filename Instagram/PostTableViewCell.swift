@@ -17,6 +17,7 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var commentlist: UILabel!
     @IBOutlet weak var toukou: UIButton!
+    @IBOutlet weak var commentbox: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()

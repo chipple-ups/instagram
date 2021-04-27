@@ -99,6 +99,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="captionLabel" destination="JEC-2r-1mz" id="7OI-Uc-bQL"/>
+                <outlet property="commentbox" destination="miO-iI-E5T" id="emG-5a-5Xv"/>
                 <outlet property="commentlist" destination="JEC-2r-1mz" id="5HC-Vn-IEy"/>
                 <outlet property="dateLabel" destination="jZK-82-2pd" id="gwf-Tb-O4E"/>
                 <outlet property="likeButton" destination="YeS-SL-Vov" id="Trj-Ng-39a"/>

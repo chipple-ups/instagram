@@ -119,17 +119,18 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //配列からタップされたインデックスのデータを取り出す
         let postData = postArray[indexPath!.row]
         
-        //likesを更新する
-        let commentdata = commentlist.text
+        let cell = tableView.cellForRow(at: indexPath!) as! PostTableViewCell
+        let commentdata = cell.commentbox?.text
+        let writecommentdata = "\(postData.name!) : \(commentdata!)"
         
             //更新でーたを作成する
             var updateValue: FieldValue
 
-                updateValue = FieldValue.arrayUnion([commentdata])
+                updateValue = FieldValue.arrayUnion([writecommentdata])
 
             //likesに更新データを書き込む
             let postRef = Firestore.firestore().collection(Const.PostPath).document(postData.id)
-            postRef.updateData(["likes": updateValue])
+            postRef.updateData(["commentdata": updateValue])
                 
             }
         

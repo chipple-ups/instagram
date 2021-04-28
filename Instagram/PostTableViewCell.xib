@@ -63,8 +63,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEC-2r-1mz">
-                        <rect key="frame" x="30" y="423.5" width="263" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEC-2r-1mz">
+                        <rect key="frame" x="30" y="423.5" width="263" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -98,7 +98,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="captionLabel" destination="JEC-2r-1mz" id="7OI-Uc-bQL"/>
+                <outlet property="captionLabel" destination="JSd-vy-pYn" id="43J-5F-V8O"/>
                 <outlet property="commentbox" destination="miO-iI-E5T" id="emG-5a-5Xv"/>
                 <outlet property="commentlist" destination="JEC-2r-1mz" id="5HC-Vn-IEy"/>
                 <outlet property="dateLabel" destination="jZK-82-2pd" id="gwf-Tb-O4E"/>

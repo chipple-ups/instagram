@@ -115,24 +115,25 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let touch = event.allTouches?.first
         let point = touch!.location(in: self.tableView)
         let indexPath = tableView.indexPathForRow(at: point)
-        
+        let name = Auth.auth().currentUser?.displayName
         //配列からタップされたインデックスのデータを取り出す
         let postData = postArray[indexPath!.row]
         
         let cell = tableView.cellForRow(at: indexPath!) as! PostTableViewCell
-        let commentdata = cell.commentbox?.text
-        let writecommentdata = "\(postData.name!) : \(commentdata!)"
-        
+        let commentdata = "\(name!)：\(cell.commentbox.text!)"
+        ///let writecommentdata = "\(name!) : \(commentdata!)"
+        cell.commentbox.text = ""
             //更新でーたを作成する
             var updateValue: FieldValue
 
-                updateValue = FieldValue.arrayUnion([writecommentdata])
+                updateValue = FieldValue.arrayUnion([commentdata])
 
             //likesに更新データを書き込む
             let postRef = Firestore.firestore().collection(Const.PostPath).document(postData.id)
             postRef.updateData(["commentdata": updateValue])
                 
             }
+
         
         
     }

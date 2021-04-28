@@ -53,8 +53,18 @@ class PostTableViewCell: UITableViewCell {
         likeLabel.text = "\(likeNumber)"
         
         //課題用
-        commentlist.text = "\(postData.name!) : \(postData.commentdata)"
+        ///if postData.commentdata.count == 0 {
+        ///} else {
+        
+        commentlist.text = ""
+        for i in 0 ..< postData.commentdata.count {
+            commentlist.text! += postData.commentdata[i] + "\n"
+        }
+        ///commentlist.text =  "\(postData.commentdata)"
+        ///}
+        
 
+        
         // いいねボタンの表示
         if postData.isLiked {
             let buttonImage = UIImage(named: "like_exist")
